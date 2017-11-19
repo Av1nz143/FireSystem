@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  record_type: MyString
+  payment_year: MyString
+  combined_federal_state_filing_program: MyString
+  blank: MyString
+  payers_tin: 1
+  payer_name_control: MyString
+  last_filing_factor: MyString
+  type_of_return: MyString
+  amount_codes: MyString
+  blank: MyString
+  foreign_entity_indictor: MyString
+  first_payer_name_line: MyString
+  second_payer_name_line: MyString
+  transfer_agent_indicator: MyString
+  payers_shipping_address: MyString
+  payer_city: MyString
+  payer_state: MyString
+  payer_zip_code: 1
+  payers_telephone_number_extension: 1
+  blank: MyText
+  record_sequence_number: MyString
+  blank: MyText
+  blank_of_cr_lf: MyString
+
+two:
+  record_type: MyString
+  payment_year: MyString
+  combined_federal_state_filing_program: MyString
+  blank: MyString
+  payers_tin: 1
+  payer_name_control: MyString
+  last_filing_factor: MyString
+  type_of_return: MyString
+  amount_codes: MyString
+  blank: MyString
+  foreign_entity_indictor: MyString
+  first_payer_name_line: MyString
+  second_payer_name_line: MyString
+  transfer_agent_indicator: MyString
+  payers_shipping_address: MyString
+  payer_city: MyString
+  payer_state: MyString
+  payer_zip_code: 1
+  payers_telephone_number_extension: 1
+  blank: MyText
+  record_sequence_number: MyString
+  blank: MyText
+  blank_of_cr_lf: MyString

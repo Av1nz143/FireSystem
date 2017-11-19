@@ -1,0 +1,98 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Transmitter T Records
+
+<%= link_to 'Genetate CSV Report', transmitter_t_records_path(format: :csv), class: 'btn btn-primary' %>
+</h1>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Record type</th>
+        <th>Payment year</th>
+        <th>Prior year data indicator</th>
+        <th>Transmitters tin</th>
+        <th>Tranmitter control code</th>
+        <th>Blank</th>
+        <th>Test file indicator</th>
+        <th>Foreign entity indicator</th>
+        <th>Transmitter name</th>
+        <th>Companyname</th>
+        <th>Company mailing address</th>
+        <th>Comapny city</th>
+        <th>Company state</th>
+        <th>Company zip code</th>
+        <th>Blank</th>
+        <th>Total no of payees</th>
+        <th>Contact name</th>
+        <th>Contact telephone number and etension</th>
+        <th>Contact email address</th>
+        <th>Blank</th>
+        <th>Record sequence number</th>
+        <th>Blank</th>
+        <th>Vendor indicator</th>
+        <th>Vendor name</th>
+        <th>Vendor mailing</th>
+        <th>Address</th>
+        <th>Vendor city</th>
+        <th>Vendor state</th>
+        <th>Vendor zip code</th>
+        <th>Vendor contact name</th>
+        <th>Vendor contact telephone number extension</th>
+        <th>Blank integer vendor foreign entity indicator</th>
+        <th>Blank</th>
+        <th>Blank</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @transmitter_t_records.each do |transmitter_t_record| %>
+        <tr>
+          <td><%= transmitter_t_record.record_type %></td>
+          <td><%= transmitter_t_record.payment_year %></td>
+          <td><%= transmitter_t_record.prior_year_data_indicator %></td>
+          <td><%= transmitter_t_record.transmitters_tin %></td>
+          <td><%= transmitter_t_record.tranmitter_control_code %></td>
+          <td><%= transmitter_t_record.blank %></td>
+          <td><%= transmitter_t_record.test_file_indicator %></td>
+          <td><%= transmitter_t_record.foreign_entity_indicator %></td>
+          <td><%= transmitter_t_record.transmitter_name %></td>
+          <td><%= transmitter_t_record.companyname %></td>
+          <td><%= transmitter_t_record.company_mailing_address %></td>
+          <td><%= transmitter_t_record.comapny_city %></td>
+          <td><%= transmitter_t_record.company_state %></td>
+          <td><%= transmitter_t_record.company_zip_code %></td>
+          <td><%= transmitter_t_record.blank %></td>
+          <td><%= transmitter_t_record.total_no_of_payees %></td>
+          <td><%= transmitter_t_record.contact_name %></td>
+          <td><%= transmitter_t_record.contact_telephone_number_and_etension %></td>
+          <td><%= transmitter_t_record.contact_email_address %></td>
+          <td><%= transmitter_t_record.blank %></td>
+          <td><%= transmitter_t_record.record_sequence_number %></td>
+          <td><%= transmitter_t_record.blank %></td>
+          <td><%= transmitter_t_record.vendor_indicator %></td>
+          <td><%= transmitter_t_record.vendor_name %></td>
+          <td><%= transmitter_t_record.vendor_mailing %></td>
+          <td><%= transmitter_t_record.address %></td>
+          <td><%= transmitter_t_record.vendor_city %></td>
+          <td><%= transmitter_t_record.vendor_state %></td>
+          <td><%= transmitter_t_record.vendor_zip_code %></td>
+          <td><%= transmitter_t_record.vendor_contact_name %></td>
+          <td><%= transmitter_t_record.vendor_contact_telephone_number_extension %></td>
+          <td><%= transmitter_t_record.blank_integer_vendor_foreign_entity_indicator %></td>
+          <td><%= transmitter_t_record.blank %></td>
+          <td><%= transmitter_t_record.blank %></td>
+          <td><%= link_to 'Show', transmitter_t_record %></td>
+          <td><%= link_to 'Edit', edit_transmitter_t_record_path(transmitter_t_record) %></td>
+          <td><%= link_to 'Destroy', transmitter_t_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Transmitter T Record', new_transmitter_t_record_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Record type:</strong>
+  <%= @transmission_f_record.record_type %>
+</p>
+
+<p>
+  <strong>Number of a records:</strong>
+  <%= @transmission_f_record.number_of_a_records %>
+</p>
+
+<p>
+  <strong>Zero:</strong>
+  <%= @transmission_f_record.zero %>
+</p>
+
+<p>
+  <strong>Blank:</strong>
+  <%= @transmission_f_record.blank %>
+</p>
+
+<%= link_to 'Edit', edit_transmission_f_record_path(@transmission_f_record) %> |
+<%= link_to 'Back', transmission_f_records_path %>

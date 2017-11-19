@@ -1,0 +1,103 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Payer B Records
+<%= link_to 'Genetate CSV Report', payer_b_records_path(format: :csv), class: 'btn btn-primary' %>
+</h1>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Record type</th>
+        <th>Payment year</th>
+        <th>Corrected return indicator</th>
+        <th>Name control</th>
+        <th>Type of tin</th>
+        <th>Payee tin</th>
+        <th>Payer account number for payee</th>
+        <th>Payers office code</th>
+        <th>Blank</th>
+        <th>Payment amount 1</th>
+        <th>Payment amount 2</th>
+        <th>Payment amount 3</th>
+        <th>Payment amount 4</th>
+        <th>Payment amount 5</th>
+        <th>Payment amount 6</th>
+        <th>Payment amount 7</th>
+        <th>Payment amount 8</th>
+        <th>Payment amount 9</th>
+        <th>Payment amount a</th>
+        <th>Payment amount b</th>
+        <th>Payment amount c</th>
+        <th>Payment amount d</th>
+        <th>Payment amount e</th>
+        <th>Payment amount f</th>
+        <th>Payment amount g</th>
+        <th>Foreign country indicator</th>
+        <th>First payee name line</th>
+        <th>Second payee name line</th>
+        <th>Blank</th>
+        <th>Payee mailing address</th>
+        <th>Blank</th>
+        <th>Payee city</th>
+        <th>Payee state</th>
+        <th>Payee zip code</th>
+        <th>Blank</th>
+        <th>Record sequence number</th>
+        <th>Blank</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @payer_b_records.each do |payer_b_record| %>
+        <tr>
+          <td><%= payer_b_record.record_type %></td>
+          <td><%= payer_b_record.payment_year %></td>
+          <td><%= payer_b_record.corrected_return_indicator %></td>
+          <td><%= payer_b_record.name_control %></td>
+          <td><%= payer_b_record.type_of_tin %></td>
+          <td><%= payer_b_record.payee_tin %></td>
+          <td><%= payer_b_record.payer_account_number_for_payee %></td>
+          <td><%= payer_b_record.payers_office_code %></td>
+          <td><%= payer_b_record.blank %></td>
+          <td><%= payer_b_record.payment_amount_1 %></td>
+          <td><%= payer_b_record.payment_amount_2 %></td>
+          <td><%= payer_b_record.payment_amount_3 %></td>
+          <td><%= payer_b_record.payment_amount_4 %></td>
+          <td><%= payer_b_record.payment_amount_5 %></td>
+          <td><%= payer_b_record.payment_amount_6 %></td>
+          <td><%= payer_b_record.payment_amount_7 %></td>
+          <td><%= payer_b_record.payment_amount_8 %></td>
+          <td><%= payer_b_record.payment_amount_9 %></td>
+          <td><%= payer_b_record.payment_amount_a %></td>
+          <td><%= payer_b_record.payment_amount_b %></td>
+          <td><%= payer_b_record.payment_amount_c %></td>
+          <td><%= payer_b_record.payment_amount_d %></td>
+          <td><%= payer_b_record.payment_amount_e %></td>
+          <td><%= payer_b_record.payment_amount_f %></td>
+          <td><%= payer_b_record.payment_amount_g %></td>
+          <td><%= payer_b_record.foreign_country_indicator %></td>
+          <td><%= payer_b_record.first_payee_name_line %></td>
+          <td><%= payer_b_record.second_payee_name_line %></td>
+          <td><%= payer_b_record.blank %></td>
+          <td><%= payer_b_record.payee_mailing_address %></td>
+          <td><%= payer_b_record.blank %></td>
+          <td><%= payer_b_record.payee_city %></td>
+          <td><%= payer_b_record.payee_state %></td>
+          <td><%= payer_b_record.Payee_zip_code %></td>
+          <td><%= payer_b_record.blank %></td>
+          <td><%= payer_b_record.record_sequence_number %></td>
+          <td><%= payer_b_record.blank %></td>
+          <td><%= link_to 'Show', payer_b_record %></td>
+          <td><%= link_to 'Edit', edit_payer_b_record_path(payer_b_record) %></td>
+          <td><%= link_to 'Destroy', payer_b_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Payer B Record', new_payer_b_record_path %>

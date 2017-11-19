@@ -1,0 +1,202 @@
+<%= form_with(model: payer_b_record, local: true) do |form| %>
+  <% if payer_b_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payer_b_record.errors.count, "error") %> prohibited this payer_b_record from being saved:</h2>
+
+      <ul>
+      <% payer_b_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :record_type %>
+    <%= form.text_field :record_type, id: :payer_b_record_record_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_year %>
+    <%= form.text_field :payment_year, id: :payer_b_record_payment_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :corrected_return_indicator %>
+    <%= form.text_field :corrected_return_indicator, id: :payer_b_record_corrected_return_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_control %>
+    <%= form.text_field :name_control, id: :payer_b_record_name_control %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_of_tin %>
+    <%= form.text_field :type_of_tin, id: :payer_b_record_type_of_tin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payee_tin %>
+    <%= form.text_field :payee_tin, id: :payer_b_record_payee_tin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payer_account_number_for_payee %>
+    <%= form.text_field :payer_account_number_for_payee, id: :payer_b_record_payer_account_number_for_payee %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payers_office_code %>
+    <%= form.text_field :payers_office_code, id: :payer_b_record_payers_office_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_b_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_1 %>
+    <%= form.text_field :payment_amount_1, id: :payer_b_record_payment_amount_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_2 %>
+    <%= form.text_field :payment_amount_2, id: :payer_b_record_payment_amount_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_3 %>
+    <%= form.text_field :payment_amount_3, id: :payer_b_record_payment_amount_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_4 %>
+    <%= form.text_field :payment_amount_4, id: :payer_b_record_payment_amount_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_5 %>
+    <%= form.text_field :payment_amount_5, id: :payer_b_record_payment_amount_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_6 %>
+    <%= form.text_field :payment_amount_6, id: :payer_b_record_payment_amount_6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_7 %>
+    <%= form.text_field :payment_amount_7, id: :payer_b_record_payment_amount_7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_8 %>
+    <%= form.text_field :payment_amount_8, id: :payer_b_record_payment_amount_8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_9 %>
+    <%= form.text_field :payment_amount_9, id: :payer_b_record_payment_amount_9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_a %>
+    <%= form.text_field :payment_amount_a, id: :payer_b_record_payment_amount_a %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_b %>
+    <%= form.text_field :payment_amount_b, id: :payer_b_record_payment_amount_b %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_c %>
+    <%= form.text_field :payment_amount_c, id: :payer_b_record_payment_amount_c %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_d %>
+    <%= form.text_field :payment_amount_d, id: :payer_b_record_payment_amount_d %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_e %>
+    <%= form.text_field :payment_amount_e, id: :payer_b_record_payment_amount_e %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_f %>
+    <%= form.text_field :payment_amount_f, id: :payer_b_record_payment_amount_f %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_amount_g %>
+    <%= form.text_field :payment_amount_g, id: :payer_b_record_payment_amount_g %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foreign_country_indicator %>
+    <%= form.text_field :foreign_country_indicator, id: :payer_b_record_foreign_country_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_payee_name_line %>
+    <%= form.text_field :first_payee_name_line, id: :payer_b_record_first_payee_name_line %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_payee_name_line %>
+    <%= form.text_field :second_payee_name_line, id: :payer_b_record_second_payee_name_line %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_b_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payee_mailing_address %>
+    <%= form.text_field :payee_mailing_address, id: :payer_b_record_payee_mailing_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_b_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payee_city %>
+    <%= form.text_field :payee_city, id: :payer_b_record_payee_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payee_state %>
+    <%= form.text_field :payee_state, id: :payer_b_record_payee_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Payee_zip_code %>
+    <%= form.text_field :Payee_zip_code, id: :payer_b_record_Payee_zip_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_b_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :record_sequence_number %>
+    <%= form.text_field :record_sequence_number, id: :payer_b_record_record_sequence_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_b_record_blank %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

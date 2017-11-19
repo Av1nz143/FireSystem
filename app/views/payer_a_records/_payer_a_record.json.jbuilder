@@ -1,0 +1,2 @@
+json.extract! payer_a_record, :id, :record_type, :payment_year, :combined_federal_state_filing_program, :blank, :payers_tin, :payer_name_control, :last_filing_factor, :type_of_return, :amount_codes, :blank, :foreign_entity_indictor, :first_payer_name_line, :second_payer_name_line, :transfer_agent_indicator, :payers_shipping_address, :payer_city, :payer_state, :payer_zip_code, :payers_telephone_number_extension, :blank, :record_sequence_number, :blank, :blank_of_cr_lf, :created_at, :updated_at
+json.url payer_a_record_url(payer_a_record, format: :json)

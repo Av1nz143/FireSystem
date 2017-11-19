@@ -1,0 +1,132 @@
+<%= form_with(model: payer_a_record, local: true) do |form| %>
+  <% if payer_a_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payer_a_record.errors.count, "error") %> prohibited this payer_a_record from being saved:</h2>
+
+      <ul>
+      <% payer_a_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :record_type %>
+    <%= form.text_field :record_type, id: :payer_a_record_record_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_year %>
+    <%= form.text_field :payment_year, id: :payer_a_record_payment_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :combined_federal_state_filing_program %>
+    <%= form.text_field :combined_federal_state_filing_program, id: :payer_a_record_combined_federal_state_filing_program %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_a_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payers_tin %>
+    <%= form.number_field :payers_tin, id: :payer_a_record_payers_tin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payer_name_control %>
+    <%= form.text_field :payer_name_control, id: :payer_a_record_payer_name_control %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_filing_factor %>
+    <%= form.text_field :last_filing_factor, id: :payer_a_record_last_filing_factor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_of_return %>
+    <%= form.text_field :type_of_return, id: :payer_a_record_type_of_return %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount_codes %>
+    <%= form.text_field :amount_codes, id: :payer_a_record_amount_codes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_a_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foreign_entity_indictor %>
+    <%= form.text_field :foreign_entity_indictor, id: :payer_a_record_foreign_entity_indictor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_payer_name_line %>
+    <%= form.text_field :first_payer_name_line, id: :payer_a_record_first_payer_name_line %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_payer_name_line %>
+    <%= form.text_field :second_payer_name_line, id: :payer_a_record_second_payer_name_line %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transfer_agent_indicator %>
+    <%= form.text_field :transfer_agent_indicator, id: :payer_a_record_transfer_agent_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payers_shipping_address %>
+    <%= form.text_field :payers_shipping_address, id: :payer_a_record_payers_shipping_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payer_city %>
+    <%= form.text_field :payer_city, id: :payer_a_record_payer_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payer_state %>
+    <%= form.text_field :payer_state, id: :payer_a_record_payer_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payer_zip_code %>
+    <%= form.number_field :payer_zip_code, id: :payer_a_record_payer_zip_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payers_telephone_number_extension %>
+    <%= form.number_field :payers_telephone_number_extension, id: :payer_a_record_payers_telephone_number_extension %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_area :blank, id: :payer_a_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :record_sequence_number %>
+    <%= form.text_field :record_sequence_number, id: :payer_a_record_record_sequence_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_area :blank, id: :payer_a_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank_of_cr_lf %>
+    <%= form.text_field :blank_of_cr_lf, id: :payer_a_record_blank_of_cr_lf %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

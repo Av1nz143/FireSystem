@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Payer A Records
+<%= link_to 'Genetate CSV Report',payer_a_records_path(format: :csv), class: 'btn btn-primary' %>
+</h1>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Record type</th>
+        <th>Payment year</th>
+        <th>Combined federal state filing program</th>
+        <th>Blank</th>
+        <th>Payers tin</th>
+        <th>Payer name control</th>
+        <th>Last filing factor</th>
+        <th>Type of return</th>
+        <th>Amount codes</th>
+        <th>Blank</th>
+        <th>Foreign entity indictor</th>
+        <th>First payer name line</th>
+        <th>Second payer name line</th>
+        <th>Transfer agent indicator</th>
+        <th>Payers shipping address</th>
+        <th>Payer city</th>
+        <th>Payer state</th>
+        <th>Payer zip code</th>
+        <th>Payers telephone number extension</th>
+        <th>Blank</th>
+        <th>Record sequence number</th>
+        <th>Blank</th>
+        <th>Blank of cr lf</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @payer_a_records.each do |payer_a_record| %>
+        <tr>
+          <td><%= payer_a_record.record_type %></td>
+          <td><%= payer_a_record.payment_year %></td>
+          <td><%= payer_a_record.combined_federal_state_filing_program %></td>
+          <td><%= payer_a_record.blank %></td>
+          <td><%= payer_a_record.payers_tin %></td>
+          <td><%= payer_a_record.payer_name_control %></td>
+          <td><%= payer_a_record.last_filing_factor %></td>
+          <td><%= payer_a_record.type_of_return %></td>
+          <td><%= payer_a_record.amount_codes %></td>
+          <td><%= payer_a_record.blank %></td>
+          <td><%= payer_a_record.foreign_entity_indictor %></td>
+          <td><%= payer_a_record.first_payer_name_line %></td>
+          <td><%= payer_a_record.second_payer_name_line %></td>
+          <td><%= payer_a_record.transfer_agent_indicator %></td>
+          <td><%= payer_a_record.payers_shipping_address %></td>
+          <td><%= payer_a_record.payer_city %></td>
+          <td><%= payer_a_record.payer_state %></td>
+          <td><%= payer_a_record.payer_zip_code %></td>
+          <td><%= payer_a_record.payers_telephone_number_extension %></td>
+          <td><%= payer_a_record.blank %></td>
+          <td><%= payer_a_record.record_sequence_number %></td>
+          <td><%= payer_a_record.blank %></td>
+          <td><%= payer_a_record.blank_of_cr_lf %></td>
+          <td><%= link_to 'Show', payer_a_record %></td>
+          <td><%= link_to 'Edit', edit_payer_a_record_path(payer_a_record) %></td>
+          <td><%= link_to 'Destroy', payer_a_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Payer A Record', new_payer_a_record_path %>

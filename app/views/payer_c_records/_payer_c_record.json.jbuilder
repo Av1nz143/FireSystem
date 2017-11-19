@@ -1,0 +1,2 @@
+json.extract! payer_c_record, :id, :record_type, :number_of_payees, :blank, :control_total_1, :control_total_2, :control_total_3, :control_total_4, :control_total_5, :control_total_6, :control_total_7, :control_total_8, :control_total_9, :control_total_a, :control_total_b, :control_total_c, :control_total_d, :control_total_e, :control_total_f, :control_total_g, :blank, :record_sequence_number, :blank, :blank_or_cr_lf, :created_at, :updated_at
+json.url payer_c_record_url(payer_c_record, format: :json)

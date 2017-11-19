@@ -1,0 +1,187 @@
+<%= form_with(model: transmitter_t_record, local: true) do |form| %>
+  <% if transmitter_t_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transmitter_t_record.errors.count, "error") %> prohibited this transmitter_t_record from being saved:</h2>
+
+      <ul>
+      <% transmitter_t_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :record_type %>
+    <%= form.text_field :record_type, id: :transmitter_t_record_record_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_year %>
+    <%= form.text_field :payment_year, id: :transmitter_t_record_payment_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prior_year_data_indicator %>
+    <%= form.text_field :prior_year_data_indicator, id: :transmitter_t_record_prior_year_data_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transmitters_tin %>
+    <%= form.number_field :transmitters_tin, id: :transmitter_t_record_transmitters_tin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tranmitter_control_code %>
+    <%= form.text_field :tranmitter_control_code, id: :transmitter_t_record_tranmitter_control_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :transmitter_t_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :test_file_indicator %>
+    <%= form.text_field :test_file_indicator, id: :transmitter_t_record_test_file_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foreign_entity_indicator %>
+    <%= form.number_field :foreign_entity_indicator, id: :transmitter_t_record_foreign_entity_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transmitter_name %>
+    <%= form.text_area :transmitter_name, id: :transmitter_t_record_transmitter_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :companyname %>
+    <%= form.text_area :companyname, id: :transmitter_t_record_companyname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_mailing_address %>
+    <%= form.text_field :company_mailing_address, id: :transmitter_t_record_company_mailing_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comapny_city %>
+    <%= form.text_field :comapny_city, id: :transmitter_t_record_comapny_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_state %>
+    <%= form.text_field :company_state, id: :transmitter_t_record_company_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_zip_code %>
+    <%= form.number_field :company_zip_code, id: :transmitter_t_record_company_zip_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :transmitter_t_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_no_of_payees %>
+    <%= form.number_field :total_no_of_payees, id: :transmitter_t_record_total_no_of_payees %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_name %>
+    <%= form.text_field :contact_name, id: :transmitter_t_record_contact_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_telephone_number_and_etension %>
+    <%= form.number_field :contact_telephone_number_and_etension, id: :transmitter_t_record_contact_telephone_number_and_etension %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_email_address %>
+    <%= form.number_field :contact_email_address, id: :transmitter_t_record_contact_email_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.number_field :blank, id: :transmitter_t_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :record_sequence_number %>
+    <%= form.text_field :record_sequence_number, id: :transmitter_t_record_record_sequence_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :transmitter_t_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_indicator %>
+    <%= form.text_field :vendor_indicator, id: :transmitter_t_record_vendor_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_name %>
+    <%= form.text_field :vendor_name, id: :transmitter_t_record_vendor_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_mailing %>
+    <%= form.text_field :vendor_mailing, id: :transmitter_t_record_vendor_mailing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :transmitter_t_record_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_city %>
+    <%= form.text_field :vendor_city, id: :transmitter_t_record_vendor_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_state %>
+    <%= form.text_field :vendor_state, id: :transmitter_t_record_vendor_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_zip_code %>
+    <%= form.number_field :vendor_zip_code, id: :transmitter_t_record_vendor_zip_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_contact_name %>
+    <%= form.text_field :vendor_contact_name, id: :transmitter_t_record_vendor_contact_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vendor_contact_telephone_number_extension %>
+    <%= form.number_field :vendor_contact_telephone_number_extension, id: :transmitter_t_record_vendor_contact_telephone_number_extension %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank_integer_vendor_foreign_entity_indicator %>
+    <%= form.number_field :blank_integer_vendor_foreign_entity_indicator, id: :transmitter_t_record_blank_integer_vendor_foreign_entity_indicator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :transmitter_t_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :transmitter_t_record_blank %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

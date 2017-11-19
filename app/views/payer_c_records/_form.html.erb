@@ -1,0 +1,132 @@
+<%= form_with(model: payer_c_record, local: true) do |form| %>
+  <% if payer_c_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payer_c_record.errors.count, "error") %> prohibited this payer_c_record from being saved:</h2>
+
+      <ul>
+      <% payer_c_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :record_type %>
+    <%= form.text_field :record_type, id: :payer_c_record_record_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_payees %>
+    <%= form.text_field :number_of_payees, id: :payer_c_record_number_of_payees %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_c_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_1 %>
+    <%= form.text_field :control_total_1, id: :payer_c_record_control_total_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_2 %>
+    <%= form.text_field :control_total_2, id: :payer_c_record_control_total_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_3 %>
+    <%= form.text_field :control_total_3, id: :payer_c_record_control_total_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_4 %>
+    <%= form.text_field :control_total_4, id: :payer_c_record_control_total_4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_5 %>
+    <%= form.text_field :control_total_5, id: :payer_c_record_control_total_5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_6 %>
+    <%= form.text_field :control_total_6, id: :payer_c_record_control_total_6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_7 %>
+    <%= form.text_field :control_total_7, id: :payer_c_record_control_total_7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_8 %>
+    <%= form.text_field :control_total_8, id: :payer_c_record_control_total_8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_9 %>
+    <%= form.text_field :control_total_9, id: :payer_c_record_control_total_9 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_a %>
+    <%= form.text_field :control_total_a, id: :payer_c_record_control_total_a %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_b %>
+    <%= form.text_field :control_total_b, id: :payer_c_record_control_total_b %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_c %>
+    <%= form.text_field :control_total_c, id: :payer_c_record_control_total_c %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_d %>
+    <%= form.text_field :control_total_d, id: :payer_c_record_control_total_d %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_e %>
+    <%= form.text_field :control_total_e, id: :payer_c_record_control_total_e %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_f %>
+    <%= form.text_field :control_total_f, id: :payer_c_record_control_total_f %>
+  </div>
+
+  <div class="field">
+    <%= form.label :control_total_g %>
+    <%= form.text_field :control_total_g, id: :payer_c_record_control_total_g %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_c_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :record_sequence_number %>
+    <%= form.text_field :record_sequence_number, id: :payer_c_record_record_sequence_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :payer_c_record_blank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank_or_cr_lf %>
+    <%= form.text_field :blank_or_cr_lf, id: :payer_c_record_blank_or_cr_lf %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

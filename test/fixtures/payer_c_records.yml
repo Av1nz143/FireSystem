@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  record_type: MyString
+  number_of_payees: MyString
+  blank: MyString
+  control_total_1: MyString
+  control_total_2: MyString
+  control_total_3: MyString
+  control_total_4: MyString
+  control_total_5: MyString
+  control_total_6: MyString
+  control_total_7: MyString
+  control_total_8: MyString
+  control_total_9: MyString
+  control_total_a: MyString
+  control_total_b: MyString
+  control_total_c: MyString
+  control_total_d: MyString
+  control_total_e: MyString
+  control_total_f: MyString
+  control_total_g: MyString
+  blank: MyString
+  record_sequence_number: MyString
+  blank: MyString
+  blank_or_cr_lf: MyString
+
+two:
+  record_type: MyString
+  number_of_payees: MyString
+  blank: MyString
+  control_total_1: MyString
+  control_total_2: MyString
+  control_total_3: MyString
+  control_total_4: MyString
+  control_total_5: MyString
+  control_total_6: MyString
+  control_total_7: MyString
+  control_total_8: MyString
+  control_total_9: MyString
+  control_total_a: MyString
+  control_total_b: MyString
+  control_total_c: MyString
+  control_total_d: MyString
+  control_total_e: MyString
+  control_total_f: MyString
+  control_total_g: MyString
+  blank: MyString
+  record_sequence_number: MyString
+  blank: MyString
+  blank_or_cr_lf: MyString

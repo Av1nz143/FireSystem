@@ -1,0 +1,37 @@
+<%= form_with(model: transmission_f_record, local: true) do |form| %>
+  <% if transmission_f_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transmission_f_record.errors.count, "error") %> prohibited this transmission_f_record from being saved:</h2>
+
+      <ul>
+      <% transmission_f_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :record_type %>
+    <%= form.text_field :record_type, id: :transmission_f_record_record_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number_of_a_records %>
+    <%= form.text_field :number_of_a_records, id: :transmission_f_record_number_of_a_records %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zero %>
+    <%= form.text_field :zero, id: :transmission_f_record_zero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blank %>
+    <%= form.text_field :blank, id: :transmission_f_record_blank %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

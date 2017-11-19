@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Transmission F Records
+<%= link_to 'Genetate CSV Report', transmission_f_records_path(format: :csv), class: 'btn btn-primary' %></h1>
+
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Record type</th>
+        <th>Number of a records</th>
+        <th>Zero</th>
+        <th>Blank</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @transmission_f_records.each do |transmission_f_record| %>
+        <tr>
+          <td><%= transmission_f_record.record_type %></td>
+          <td><%= transmission_f_record.number_of_a_records %></td>
+          <td><%= transmission_f_record.zero %></td>
+          <td><%= transmission_f_record.blank %></td>
+          <td><%= link_to 'Show', transmission_f_record %></td>
+          <td><%= link_to 'Edit', edit_transmission_f_record_path(transmission_f_record) %></td>
+          <td><%= link_to 'Destroy', transmission_f_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Transmission F Record', new_transmission_f_record_path %>
