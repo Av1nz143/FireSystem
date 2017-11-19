@@ -19,7 +19,7 @@ gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-ui-rails'
 gem 'devise'
-gem 'bcrypt', '~> 3.1.11'
+gem 'bcrypt', platforms: :ruby
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -46,6 +46,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
 end
