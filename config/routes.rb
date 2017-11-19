@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, skip: [:registrations]
   resources :transmission_f_records
   resources :payer_c_records
   resources :payer_b_records

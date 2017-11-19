@@ -16,13 +16,19 @@
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Records <span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li><a href="/transmitter_t_records">Transmitter T Record</a></li>
             <li><a href="/payer_a_records">Payer A Record</a></li>
             <li><a href="/payer_b_records">Payer B Record</a></li>
-            <li role="separator" class="divider"></li>
             <li><a href="/payer_c_records">Payer C record</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/transmitter_t_records">Transmitter T Record</a></li>
             <li><a href="/transmission_f_records">Transmission F Record</a></li>
-            </ul>
+
+            <% if user_signed_in? %>
+              <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+            <% else %>
+              <li><%= link_to "Sign in", new_user_session_path %></li>
+            <% end %>
+          </ul>
         </li>
         </ul>
     </div><!-- /.navbar-collapse -->

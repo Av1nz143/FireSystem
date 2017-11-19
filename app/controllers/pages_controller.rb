@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-    def main
-        
-    end 
+    skip_before_action :authenticate_user!
 
+    def main    
+    end 
 end
