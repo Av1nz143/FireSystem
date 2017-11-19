@@ -12,7 +12,12 @@
 #
 
 class TransmissionFRecord < ApplicationRecord
+  include Validatable
     require 'csv'
+
+    def self.validations
+      {}
+    end
 
     def self.to_csv
         attributes = TransmissionFRecord.new.attributes.keys
@@ -21,7 +26,9 @@ class TransmissionFRecord < ApplicationRecord
           csv << attributes.map(&:humanize)
     
           all.each do |record|
-            csv << attributes.map{ |attr| record.send(attr) }
+            csv << attributes.map do |attr|
+              field_validation(attr, record.send(attr))
+            end
           end
         end
     end

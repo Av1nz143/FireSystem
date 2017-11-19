@@ -28,17 +28,37 @@
 #
 
 class PayerARecord < ApplicationRecord
+    include Validatable
     require 'csv'
 
-    def self.to_csv
-        attributes = PayerARecord.new.attributes.keys
+    def self.validations
+      {
+        record_type: {
+          required: "A",
+          length: 1
+        },
+        payment_year: {
+          required: nil,
+          length: 4
+        },
+        combined_federal_state_filing_program: {
+          required: nil,
+          length: 1
+        }
+      }
+    end
 
-        CSV.generate(headers: true) do |csv|
-          csv << attributes.map(&:humanize)
-    
-          all.each do |record|
-            csv << attributes.map{ |attr| record.send(attr) }
+    def self.to_csv
+      attributes = PayerARecord.new.attributes.keys
+
+      CSV.generate(headers: true) do |csv|
+        csv << attributes.map(&:humanize)
+  
+        all.each do |record|
+          csv << attributes.map do |attr|
+            field_validation(attr, record.send(attr))
           end
         end
-    end
+      end
+  end
 end
