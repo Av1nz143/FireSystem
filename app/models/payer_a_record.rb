@@ -44,7 +44,16 @@ class PayerARecord < ApplicationRecord
         combined_federal_state_filing_program: {
           required: nil,
           length: 1
-        }
+        },
+        blank: {
+          required: nil,
+          length: 5
+        },
+        Payer_taxpayer_identification_number_tin: {
+          required: nil,
+          length: 9
+        },
+        
       }
     end
 
