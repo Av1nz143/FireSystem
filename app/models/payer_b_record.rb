@@ -55,7 +55,7 @@ class PayerBRecord < ApplicationRecord
           length: 4
         },
         corrected_return_indicator: {
-          required: "G"_or_"C"_or_nil,
+          required: nil,
           length: 1
         },
         name_control: {
@@ -67,13 +67,14 @@ class PayerBRecord < ApplicationRecord
           length: 1
         },
         payee_tin: {
-          required: "SSN_or_ITIN_or_ATIN_or_EIN",
+          required: nil,
           length: 9
         },
         payer_account_number_for_payee: {
           required: nil,
           length: 20
         },
+
         payers_office_code: {
           required: nil,
           length: 4
@@ -163,7 +164,7 @@ class PayerBRecord < ApplicationRecord
           length: 40
         },
         payee_mailing_address: {
-          required: "payee_mailing_address",
+          required: nil,
           length: 40
         },
         blank: {
