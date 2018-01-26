@@ -53,7 +53,11 @@ class PayerARecord < ApplicationRecord
           required: nil,
           length: 9
         },
-        
+        payer_name_control: {
+          required: nil,
+          length: 4
+        },
+                
       }
     end
 
