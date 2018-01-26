@@ -45,7 +45,60 @@ class PayerBRecord < ApplicationRecord
     require 'csv'
 
     def self.validations
-      {}
+      {
+        payment_amount_g: {
+          required: nil,
+          length: 12
+        },
+        foreign_country_indicator: {
+          required: nil,
+          length: 1
+        },
+        first_payee_name_line: {
+          required: nil,
+          length: 40
+        },
+        second_payee_name_line: {
+          required: nil,
+          length: 40
+        },
+        blank: {
+          required: nil,
+          length: 40
+        },
+        payee_mailing_address: {
+          required: "payee_mailing_address",
+          length: 40
+        },
+        blank: {
+          required: nil,
+          length: 40
+        },
+        payee_city: {
+          required: nil,
+          length: 40
+        },
+        payee_state: {
+          required: nil,
+          length: 2
+        },
+        Payee_zip_code: {
+          required: nil,
+          length: 9
+        },
+        blank: {
+          required: nil,
+          length: 1
+        },
+        record_sequence_number: {
+          required: nil,
+          length: 8
+        },
+        blank: {
+          required: nil,
+          length: 36
+        },
+      }
     end
 
     def self.to_csv
