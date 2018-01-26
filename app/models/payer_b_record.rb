@@ -46,6 +46,102 @@ class PayerBRecord < ApplicationRecord
 
     def self.validations
       {
+        record_type: {
+          required: "B",
+          length: 1
+        },
+        payment_year: {
+          required: "2017"
+          length: 4
+        },
+        corrected_return_indicator: {
+          required: "G" or "C" or nil,
+          length: 1
+        },
+        name_control: {
+          required: nil,
+          length: 4
+        },
+        type_of_tin: {
+          required: nil,
+          length: 1
+        },
+        payee_tin: {
+          required: "SSN or ITIN or ATIN or EIN",
+          length: 9
+        },
+        payer_account_number_for_payee: {
+          required: nil,
+          length: 20
+        },
+        payers_office_code: {
+          required: nil,
+          length: 4
+        },
+        blank: {
+          required: nil,
+          length: 10
+        },
+        payment_amount_1: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_2: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_3: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_4: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_5: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_6: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_7: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_8: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_9: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_a: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_b: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_c: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_d: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_e: {
+          required: nil,
+          length: 12
+        },
+        payment_amount_f: {
+          required: nil,
+          length: 12
+        },
         payment_amount_g: {
           required: nil,
           length: 12
