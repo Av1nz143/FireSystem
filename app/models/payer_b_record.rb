@@ -55,7 +55,7 @@ class PayerBRecord < ApplicationRecord
           length: 4
         },
         corrected_return_indicator: {
-          required: "G" or "C" or nil,
+          required: "G"_or_"C"_or_nil,
           length: 1
         },
         name_control: {
@@ -194,7 +194,9 @@ class PayerBRecord < ApplicationRecord
           required: nil,
           length: 36
         },
+
       }
+
     end
 
     def self.to_csv
