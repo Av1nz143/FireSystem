@@ -118,7 +118,7 @@ class PayerARecord < ApplicationRecord
           length: 241
         },
         blank: {
-          required: (CR/LF) or nil,
+          required: CR_LF or nil,
           length:2
         },
       }
