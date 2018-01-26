@@ -57,8 +57,72 @@ class PayerARecord < ApplicationRecord
           required: nil,
           length: 4
         },
-                
+        last_filing_factor: {
+          required: nil,
+          length: 1
+        },
+        type_of_return: {
+          required: nil,
+          length: 2
+        },
+        amount_codes: {
+          required: nil,
+          length: 16
+        },
+        blank: {
+          required: nil,
+          length: 8
+        },
+        foreign_entity_indictor: {
+        required: nil,
+        length: 1
+        },
+        first_payer_name_line: {
+          required: nil,
+          length: 40
+        },
+        second_payer_name_line: {
+          required: nil,
+          length: 40
+        },
+        transfer_agent_indicator: {
+          required: nil,
+          length: 1 
+        },
+        payers_shipping_address: {
+          required: nil,
+          length: 40
+        },
+        payer_city: {
+          required: nil,
+          length: 40
+        },
+        payer_state: {
+          required: nil,
+          length: 2
+        },
+        payer_zip_code: {
+          required: nil,
+          length: 9
+        },
+        payers_telephone_number_extension: {
+          required: nil,
+          length: 15
+        },
+        blank: {
+          required: nil,
+          length: 260
+        },
+        record_sequence_number: {
+          required: nil,
+          length: 241
+        },
+        blank: {
+          required: (CR/LF) or nil,
+          length:2
+        },
       }
+
     end
 
     def self.to_csv
