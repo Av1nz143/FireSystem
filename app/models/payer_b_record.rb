@@ -67,7 +67,7 @@ class PayerBRecord < ApplicationRecord
           length: 1
         },
         payee_tin: {
-          required: "SSN or ITIN or ATIN or EIN",
+          required: "SSN_or_ITIN_or_ATIN_or_EIN",
           length: 9
         },
         payer_account_number_for_payee: {
