@@ -16,7 +16,24 @@ class TransmissionFRecord < ApplicationRecord
     require 'csv'
 
     def self.validations
-      {}
+      {
+        record_type: {
+          required: "F",
+          length: 1
+        },
+        number_of_a_records: {
+          required: nil,
+          length: 8
+        },
+        zero: {
+          required: "0",
+          length: 21
+        },
+        blank: {
+          required: nil,
+          length: 19
+        },
+      }
     end
 
     def self.to_csv
