@@ -33,7 +33,92 @@ class PayerCRecord < ApplicationRecord
     require 'csv'
 
     def self.validations
-      {}
+      {
+        record_type: {
+          required: "K",
+          length: 1
+        },
+        number_of_payees: {
+          required: nil,
+          length: 8
+        },
+        blank: {
+          required: nil,
+          length: 6
+        },
+        control_total_1: {
+          required: nil,
+          length: 18
+        },
+        control_total_2: {
+          required: nil,
+          length: 18
+        },
+        control_total_3: {
+          required: nil,
+          length: 18
+        },
+        control_total_4: {
+          required: nil,
+          length: 18
+        },
+        control_total_5: {
+          required: nil,
+          length: 18
+        },
+        control_total_6: {
+          required: nil,
+          length: 18
+        },
+        control_total_9: {
+          required: nil,
+          length: 18
+        },
+        control_total_a: {
+          required: nil,
+          length: 18
+        },
+        control_total_b: {
+          required: nil,
+          length: 18
+        },
+        control_total_c: {
+          required: nil,
+          length: 18
+        },
+        control_total_d: {
+          required: nil,
+          length: 18
+        },
+        control_total_e: {
+          required: nil,
+          length: 18
+        },
+        control_total_f: {
+          required: nil,
+          length: 18
+        },
+        control_total_g: {
+          required: nil,
+          length: 158
+        },
+        blank: {
+          required: nil,
+          length: 196
+        },
+        record_sequence_number: {
+          required: nil, 
+          length: 8
+        },
+        blank: {
+          required: nil,
+          length: 199
+        },
+        blank: {
+          required: nil,
+          length: 4
+        },
+      }
     end
 
     def self.to_csv
