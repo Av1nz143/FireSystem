@@ -51,7 +51,7 @@ class PayerBRecord < ApplicationRecord
           length: 1
         },
         payment_year: {
-          required: "2017"
+          required: "2017",
           length: 4
         },
         corrected_return_indicator: {

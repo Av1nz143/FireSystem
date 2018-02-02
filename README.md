@@ -1,24 +1,17 @@
-# README
+Transmitter T Record
+record_type:string payment_year:string prior_year_data_indicator:string transmitters_tin:integer tranmitter_control_code:string blank:string test_file_indicator:string foreign_entity_indicator:integer transmitter_name:text companyname:text company_mailing_address:string comapny_city:string company_state:string company_zip_code:integer blank:string total_no_of_payees:integer contact_name:string contact_telephone_number_and_etension:integer contact_email_address:integer blank:integer record_sequence_number:string blank:string vendor_indicator:string vendor_name:string vendor_mailing:string address:string vendor_city:string vendor_state:string vendor_zip_code:integer vendor_contact_name:string vendor_contact_telephone_number_extension:integer blank_integer_vendor_foreign_entity_indicator:integer blank:string blank:string
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Payer A Record
+record_type:string payment_year:string combined_federal_state_filing_program:string blank:string payers_tin:integer payer_name_control:string last_filing_factor:string type_of_return:string amount_codes:string blank:string foreign_entity_indictor:string first_payer_name_line:string second_payer_name_line:string transfer_agent_indicator:string payers_shipping_address:string payer_city:string payer_state:string payer_zip_code:integer payers_telephone_number_extension:integer blank:text record_sequence_number:string blank:text blank_of_cr_lf:string
 
-* Ruby version
+Payer B Record
+record_type:string payment_year:string corrected_return_indicator:string name_control:string type_of_tin:string payee_tin:string payer_account_number_for_payee:string payers_office_code:string blank:string payment_amount_1:string payment_amount_2:string payment_amount_3:string payment_amount_4:string payment_amount_5:string payment_amount_6:string payment_amount_7:string payment_amount_8:string payment_amount_9:string payment_amount_a:string payment_amount_b:string payment_amount_c:string payment_amount_d:string payment_amount_e:string payment_amount_f:string payment_amount_g:string foreign_country_indicator:string first_payee_name_line:string second_payee_name_line:string blank:string payee_mailing_address:string blank:string payee_city:string payee_state:string Payee_zip_code:string blank:string record_sequence_number:string blank:string
 
-* System dependencies
+End Of payer C record
+record_type:string number_of_payees:string blank:string control_total_1:string control_total_2:string control_total_3:string control_total_4:string control_total_5:string control_total_6:string control_total_7:string control_total_8:string control_total_9:string control_total_a:string control_total_b:string control_total_c:string control_total_d:string control_total_e:string control_total_f:string control_total_g:string blank:string record_sequence_number:string blank:string blank_or_cr_lf:string
 
-* Configuration
 
-* Database creation
+End of Transmission "F" Record
+record_type:string number_of_a_records:string zero:string blank:string
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
