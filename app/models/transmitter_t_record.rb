@@ -48,7 +48,7 @@ class TransmitterTRecord < ApplicationRecord
           length: 1
         },
         payment_year: {
-          required: "2017"
+          required: nil,
           length: 4
         },
         prior_year_data_indicator: {
