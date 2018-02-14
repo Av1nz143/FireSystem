@@ -12,9 +12,9 @@
 #  test_file_indicator                           :string
 #  foreign_entity_indicator                      :integer
 #  transmitter_name                              :text
-#  companyname                                   :text
+#  company_name                                   :text
 #  company_mailing_address                       :string
-#  comapny_city                                  :string
+#  company_city                                  :string
 #  company_state                                 :string
 #  company_zip_code                              :integer
 #  total_no_of_payees                            :integer
@@ -91,7 +91,7 @@ class TransmitterTRecord < ApplicationRecord
           required: nil,
           length: 40
         },
-        comapny_city: {
+        company_city: {
           required: nil,
           length: 40
         },
